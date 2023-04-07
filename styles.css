@@ -1,12 +1,19 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #E5E5E5;
+   background: #EEF9BF;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
 }
 
 .titulo_desktop {
+    margin-bottom: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 40px;
+    margin-bottom: 40px;
     width: 540px;
     height: 63px;
     font-family: 'Roboto';
@@ -16,4 +23,32 @@ body {
     line-height: 66px;
     letter-spacing: -0.004em;
     color: #75B79E;
+}
+
+.titulo_mobile {
+    margin-top: 40px;
+    margin-bottom: 47px;
+    width: 540px;
+    height: 36px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.004em;
+    color: #75B79E;
+}
+
+.container_cards {
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+}
+
+.cards {
+    width: 117px;
+    height: 146px;
+    margin-right: 34px;
+    background: #A7E9AF;
 }
