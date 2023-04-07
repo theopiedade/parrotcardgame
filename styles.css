@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-bottom: 47px;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -30,7 +31,7 @@ body {
     align-items: center;
     justify-content:flex-start;
     margin-left: 200px;
-    margin-right: 110px;
+    margin-right: 200px;
     width: 90%;
 }
 
@@ -44,27 +45,9 @@ body {
 
 @media (max-width: 335px) {
     .title {
-        display: flex;
-        justify-content: center;
-        margin-top: 40px;
-        margin-bottom: 47px;
-        height: 36px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
         font-size: 36px;
-        line-height: 42px;
-        text-align: center;
-        letter-spacing: -0.004em;
-        color: #75B79E;
     }
     container_cards {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
         justify-content: center;
-        margin-left: 200px;
-        margin-right: 200px;
-        width: 90%;
     }
   
