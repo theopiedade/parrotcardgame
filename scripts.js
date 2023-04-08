@@ -9,3 +9,15 @@ for (let i=0;i<cards;i++) {
     element.innerHTML += '<div class="cards"><img class="back" src="img/back.png"/></div>';
 }
 
+let card_types=[".bobrossparrot.gif","explodyparrot.gif","fiestaparrot.gif","metalparrot.gif",
+"reveritparrot.gif","tripletsparrot.gif","unicornparrot.gif"];
+
+alert("Chegou aqui");
+
+card_types.rand(comparador);
+
+alert(card_types[1]);
+
+function comparador() { 
+	return Math.random() - 0.5; 
+}
