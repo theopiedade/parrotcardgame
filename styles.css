@@ -24,7 +24,6 @@ body {
     color: #75B79E;
 }
 
-
 .container_cards {
     display: flex;
     flex-wrap: wrap;
@@ -36,11 +35,19 @@ body {
 }
 
 .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 34px;
     width: 117px;
     height: 146px;
     margin-right: 34px;
     background: #A7E9AF;
+}
+
+.back {
+    width: 100px;
+    height: 100px;
 }
 
 @media (max-width: 335px) {
