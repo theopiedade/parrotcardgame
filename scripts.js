@@ -38,7 +38,7 @@ function game_init() {
 
 
 function cardClick(cardNum) {
-   if (cards_status[cardNum] === 'unselected') {
+   if (cards_status[cardNum] === 'unselected' && cards_status.indexOf('selected2') < 0) {
       if (cards_status.indexOf('selected1') == -1) {
          cards_status[cardNum] = 'selected1';
          open_card(cardNum);
@@ -61,8 +61,6 @@ function cardEqualCheck() {
         finalCheck();
     }
     else {
-      cards_status[card1] = 'unselected';
-      cards_status[card2] = 'unselected';
       setTimeout(close_cards,1000, card1, card2);
     }
 }
@@ -89,8 +87,12 @@ function close_cards(c1, c2) {
     card_selected.innerHTML = '';
     card_selected.innerHTML = `<img src="img/back.png" />`;
     
+    
     card_selected = document.querySelector(`.card${c2}`);
     card_selected.innerHTML = '';
     card_selected.innerHTML = `<img src="img/back.png" />`;
+    
+    cards_status[c1] = 'unselected';
+    cards_status[c2] = 'unselected';
 
 }
