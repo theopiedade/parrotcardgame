@@ -92,7 +92,7 @@ function gameOver () {
     clearInterval(idIntervalTimeCont);
     ask = '';
     while (ask !== 'sim' && ask !== 'não') {
-        ask = prompt("Gostaria de reiniciar a partida?");
+        ask = prompt("Você gostaria de reiniciar a partida? (sim ou não)");
         if (ask == 'sim') { game_init(); }
     }
 }
