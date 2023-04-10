@@ -53,6 +53,20 @@ body {
     height: 100px;
 }
 
+.time {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: #A7E9AF;
+    color: #EEF9BF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 100px;
+}
+
 @media (max-width: 335px) {
     .title {
         font-size: 36px;
